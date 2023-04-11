@@ -1,0 +1,11 @@
+public class Main
+{
+     static double Calculator(double qInitial, double qNew, double pInitial, double pNew) {
+        double qPercentChange =  (qInitial-qNew)/((qInitial+qNew)/2);
+        double pPercentChange = (pInitial-pNew)/((pInitial+pNew)/2);
+        return qPercentChange/pPercentChange;
+     }
+	public static void main(String[] args) {
+		System.out.println(Calculator(20, 25, 10, 8));
+	}
+}
